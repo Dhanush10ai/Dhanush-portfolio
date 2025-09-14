@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.Dhanush - Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">B.Dhanush</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title mb-3">
+                            Hi, I'm <span class="text-primary">B.Dhanush</span>
+                        </h1>
+                        <h2 class="hero-subtitle mb-4">3rd Year B.Tech Computer Science Student</h2>
+                        <p class="hero-description mb-4">
+                            Passionate about technology and software development. I enjoy building innovative solutions 
+                            and exploring new technologies to create meaningful digital experiences.
+                        </p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn-lg me-3" onclick="scrollToSection('contact')">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="scrollToSection('projects')">
+                                <i class="fas fa-eye me-2"></i>View Projects
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">About Me</h2>
+                        <p class="section-subtitle">Get to know more about my background and interests</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-content">
+                        <p class="about-text">
+                            I am a dedicated 3rd-year B.Tech Computer Science student with a strong passion for technology 
+                            and software development. Throughout my academic journey, I have developed expertise in various 
+                            programming languages and modern web technologies.
+                        </p>
+                        <p class="about-text">
+                            My interests span across full-stack web development, cloud technologies, and software engineering. 
+                            I enjoy tackling complex problems and building solutions that make a difference. Always eager to 
+                            learn new technologies and collaborate on innovative projects.
+                        </p>
+                        <div class="about-stats row mt-4">
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">10</h3>
+                                    <p class="stat-label">Technologies</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">3</h3>
+                                    <p class="stat-label">Projects</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center mb-3">
+                                <div class="stat-item">
+                                    <h3 class="stat-number">2</h3>
+                                    <p class="stat-label">Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">Skills & Technologies</h2>
+                        <p class="section-subtitle">Technologies and tools I work with</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-html5 skill-icon"></i>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-css3-alt skill-icon"></i>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-js-square skill-icon"></i>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-bootstrap skill-icon"></i>
+                                <span class="skill-name">Bootstrap</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-node-js skill-icon"></i>
+                                <span class="skill-name">Node.js</span>
+                            </div>
+                            <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="70"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fas fa-code skill-icon"></i>
+                                <span class="skill-name">C Language</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-java skill-icon"></i>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-git-alt skill-icon"></i>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-github skill-icon"></i>
+                                <span class="skill-name">GitHub</span>
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-item">
+                        <div class="skill-header d-flex justify-content-between align-items-center mb-2">
+                            <div class="skill-info">
+                                <i class="fab fa-aws skill-icon"></i>
+                                <span class="skill-name">AWS</span>
+                            </div>
+                            <span class="skill-percentage">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="65"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">Projects</h2>
+                        <p class="section-subtitle">Some of my recent work and projects</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h5 class="card-title">Web Development Project</h5>
+                            <p class="card-text">A responsive web application built with HTML, CSS, JavaScript and Bootstrap showcasing modern web development techniques.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                            <a href="https://github.com/dhanush10ai" target="_blank" class="btn btn-outline-primary">
+                                <i class="fab fa-github me-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h5 class="card-title">Node.js Application</h5>
+                            <p class="card-text">Backend application demonstrating server-side development skills with RESTful APIs and database integration.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/dhanush10ai" target="_blank" class="btn btn-outline-primary">
+                                <i class="fab fa-github me-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card card h-100">
+                        <div class="card-body">
+                            <div class="project-icon mb-3">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h5 class="card-title">Java Programming Project</h5>
+                            <p class="card-text">Object-oriented programming project showcasing Java fundamentals, data structures, and algorithm implementation.</p>
+                            <div class="tech-stack mb-3">
+                                <span class="tech-tag">Java</span>
+                            </div>
+                            <a href="https://github.com/dhanush10ai" target="_blank" class="btn btn-outline-primary">
+                                <i class="fab fa-github me-2"></i>View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <p class="section-subtitle">Let's connect and discuss opportunities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="contact-info">
+                                <div class="contact-item mb-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Email</h5>
+                                        <a href="mailto:23r21a05ab@gmail.com">23r21a05ab@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-4">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>GitHub</h5>
+                                        <a href="https://github.com/dhanush10ai" target="_blank">dhanush10ai</a>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h5>Location</h5>
+                                        <p>India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="contact-form" id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-text mb-0">&copy; 2025 B.Dhanush. All rights reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="https://github.com/dhanush10ai" target="_blank" class="social-link me-3">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:23r21a05ab@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
